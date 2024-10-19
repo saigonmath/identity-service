@@ -46,7 +46,7 @@ public class UserController {
     }
 
     @GetMapping("/users/filters")
-    public UserDto getUserByUsernamea(@Param("username") String username){
+    public UserDto getUserBy(@Param("username") String username){
         return userService.getUserByUsername(username);
     }
 }
